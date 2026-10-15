@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: elsie-date
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./public
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
